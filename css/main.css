@@ -1,4 +1,4 @@
-/* 全局样式 */
+/* 全局樣式 */
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ body {
     overflow: hidden;
 }
 
-/* 顶部横幅 */
+/* 頂部橫幅 */
 .top-banner {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 30px;
@@ -50,12 +50,12 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* 主要内容区 */
+/* 主要內容區 */
 .content {
     padding: 40px;
 }
 
-/* 区块样式 */
+/* 區塊樣式 */
 .section {
     margin-bottom: 50px;
     padding: 30px;
@@ -72,7 +72,7 @@ body {
     padding-bottom: 10px;
 }
 
-/* 链接网格 */
+/* 連結網格 */
 .links-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -107,7 +107,7 @@ body {
     font-size: 20px;
 }
 
-/* 表单样式 */
+/* 表單樣式 */
 form {
     background: white;
     padding: 30px;
@@ -149,7 +149,7 @@ textarea:focus {
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
-/* 按钮样式 */
+/* 按鈕樣式 */
 button,
 input[type="submit"],
 input[type="reset"] {
@@ -176,7 +176,7 @@ input[type="reset"] {
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
 }
 
-/* 搜索框样式 */
+/* 搜尋框樣式 */
 .search-box {
     display: flex;
     gap: 10px;
@@ -187,7 +187,7 @@ input[type="reset"] {
     flex: 1;
 }
 
-/* 单选框和复选框 */
+/* 單選框和複選框 */
 .radio-group,
 .checkbox-group {
     display: flex;
@@ -202,7 +202,7 @@ input[type="checkbox"] {
     margin-right: 5px;
 }
 
-/* 表格样式 */
+/* 表格樣式 */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -231,7 +231,7 @@ tr:hover {
     background: #f8f9fa;
 }
 
-/* 列表样式 */
+/* 列表樣式 */
 ul, ol {
     margin-left: 25px;
     margin-top: 10px;
@@ -250,7 +250,7 @@ iframe {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* 媒体样式 */
+/* 媒體樣式 */
 audio,
 video {
     border-radius: 10px;
@@ -268,7 +268,7 @@ img:hover {
     transform: scale(1.05);
 }
 
-/* 文本样式展示 */
+/* 文本樣式展示 */
 .text-examples p {
     margin: 10px 0;
     padding: 10px;
@@ -276,12 +276,12 @@ img:hover {
     border-radius: 5px;
 }
 
-/* 标题样式 */
+/* 標題樣式 */
 h1, h2, h3, h4, h5, h6 {
     margin: 15px 0;
 }
 
-/* 响应式设计 */
+/* 響應式設計 */
 @media (max-width: 768px) {
     .container {
         margin: 10px;
@@ -314,7 +314,7 @@ dd {
     color: #666;
 }
 
-/* 交互式 demo 区域 */
+/* 交互式 demo 區域 */
 #demo {
     background: #fff3cd;
     padding: 15px;
@@ -323,7 +323,7 @@ dd {
     margin: 10px 0;
 }
 
-/* 分隔线 */
+/* 分隔線 */
 hr {
     border: none;
     height: 2px;
@@ -331,7 +331,7 @@ hr {
     margin: 30px 0;
 }
 
-/* 平滑滚动 */
+/* 平滑滾動 */
 html {
     scroll-behavior: smooth;
 }
