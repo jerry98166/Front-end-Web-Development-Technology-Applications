@@ -1,264 +1,309 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
-    <title>
-        高孟麟的網站！
-    </title>
-    <!--metadata-->
+    <title>高孟麟的網站！</title>
     <meta charset="UTF-8">
     <meta name="Description" content="This is 高孟麟的第一個網站！">
     <meta name="Keywords" content="HTML, CSS, JavaScript">
     <meta name="Author" content="高孟麟"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Refresh" content="600">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body style="background-color: lightgray;">
-    <!--Hyperlinks -->
-   
-    <a href="https://www.google.com" target="_blank">
-        <h1>Google</h1>
-    </a>
+<body>
+    <!-- 顶部横幅 -->
+    <div class="top-banner">
+        <a href="https://jerry98166.github.io/Self-Introduction/" target="_blank">這是我的個人網站！</a>
+    </div>
 
-    <a href="https://www.google.com" target=_self title="this take you to Google">
-        <h1>Google</h1>
-    </a>
-
-    <a href="index2.html" target=_self title="this take you to index2">
-        <h1>press me to index2</h1>
-    </a>
-
-    <a href="jerry59877@gmail.com" target=_self title="this take you to my email">
-        <h1>MY email!</h1>
-    </a>
-
-    <br>
-    <!--form-->
-    <form action="https://www.google.com/search" method="get" target="_blank">
-        <input type="text" name="q" placeholder="Search Google">
-        <button type="submit">Search</button>
-    </form>
-    <br>
-
-    <form action="action_page.php" method="get" target="_blank">
-        <div>
-            <label for="fname">FirstName:</label>
-            <input type="text" id="fname" name="fname" placeholder="FirstName" required>
-        </div>
-            <br>
-        <div>
-            <label for="lname">LastName:</label>
-            <input type="text" id="lname" name="lname" placeholder="LastName" required>
-        </div>
-            <br>
-        <div>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="XXX@XXX.XXX" maxlength="10" required>
-        </div>
-        <div>
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" maxlength="10" required>
-            <br>
-        </div>
-        <div>
-            <label for="phone">telephone:</label>
-            <input type="tel" id="phone" name="phone" placeholder="Enter your telephone number"  required>
+    <div class="container">
+        <div class="content">
             
-        </div>
-        <br>
-         <div>
-            <label for="birthday">Birthday:</label>
-            <input type="date" id="birthday" name="birthday" required>
-            <br>
-        </div>
-        <div>
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="0" max="5" required>
-            <br>
-        </div>
-        <div>
-            <label for="title">Title:</label>
-            <label for="Mr.">Mr.</label>
-            <input type="radio" name="title" value="Mr." required>
-            <label for="Mrs.">Mrs.</label>
-            <input type="radio" name="title" value="Mrs." required>
-            <label for="PhD.">PhD.</label>
-            <input type="radio" name="title" value="PhD." required>
-        </div>
-        <br>
-        <div>
-            <label for="payment">payment:</label>
-            <select id="payment" name="payment" required>
-                <option value="credit card">credit card</option>
-                <option value="debit card">debit card</option>
-                <option value="cash">cash</option>
-                <option value="mobile payment">mobile payment</option>
-            </select>
-        </div>
-        <br>
-        <div>
-            <label for="subscribe">Subscribe:</label>
-            <input type="checkbox" id="subscribe" name="subscribe" required>
-        </div>
-        <br>
+            <!-- 快速链接区 -->
+            <div class="section">
+                <h2>🔗 快速連結</h2>
+                <div class="links-grid">
+                    <div class="link-card">
+                        <a href="https://www.google.com" target="_blank" title="前往 Google">
+                            <h3>🔍 Google</h3>
+                            <p>搜索引擎</p>
+                        </a>
+                    </div>
+                    <div class="link-card">
+                        <a href="html/index2.html" target="_self" title="前往 index2">
+                            <h3>📄 Index 2</h3>
+                            <p>第二個頁面</p>
+                        </a>
+                    </div>
+                    <div class="link-card">
+                        <a href="mailto:jerry59877@gmail.com" title="發送郵件">
+                            <h3>📧 我的郵箱</h3>
+                            <p>jerry59877@gmail.com</p>
+                        </a>
+                    </div>
+                    <div class="link-card">
+                        <a href="https://www.wikipedia.org" target="_blank" title="前往維基百科">
+                            <h3>📚 維基百科</h3>
+                            <p>知識百科</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-        <div>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-        </div>    
-    </form>
-    <!--button tags-->
-        <a href="https://www.google.com" target=_blank>
-            <button style="background-color: blue; color: gray;border-radius: 5px;">Go to Google</button>
-        </a>
-        <a href="#" onclick="alert(' 高孟麟棒棒!')">
-            <button>Click Me!</button>
-        </a>
-        <br>
-        <button onclick="doSomething()">點我!</button> 
-        <p id="demo">Yo 是我</p>
-        <script>
-            function doSomething() {
-                document.getElementById("demo").innerHTML = "我是你爹!";
-            }
-        </script>
+            <!-- Google 搜索 -->
+            <div class="section">
+                <h2>🔎 Google 搜尋</h2>
+                <form action="https://www.google.com/search" method="get" target="_blank">
+                    <div class="search-box">
+                        <input type="text" name="q" placeholder="在 Google 上搜索...">
+                        <button type="submit">搜索</button>
+                    </div>
+                </form>
+            </div>
 
-        
-    <br>
+            <!-- 用户注册表单 -->
+            <div class="section">
+                <h2>📝 用戶註冊表單</h2>
+                <form action="action_page.php" method="get" target="_blank">
+                    <div class="form-group">
+                        <label for="fname">名字 (FirstName):</label>
+                        <input type="text" id="fname" name="fname" placeholder="請輸入您的名字" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lname">姓氏 (LastName):</label>
+                        <input type="text" id="lname" name="lname" placeholder="請輸入您的姓氏" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">電子郵件 (Email):</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">密碼 (Password):</label>
+                        <input type="password" id="password" name="password" placeholder="請輸入密碼" maxlength="20" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">電話 (Telephone):</label>
+                        <input type="tel" id="phone" name="phone" placeholder="請輸入電話號碼" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="birthday">生日 (Birthday):</label>
+                        <input type="date" id="birthday" name="birthday" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="quantity">數量 (Quantity 0-5):</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="5" placeholder="0-5" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>稱謂 (Title):</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="title" value="Mr." required> Mr.</label>
+                            <label><input type="radio" name="title" value="Mrs." required> Mrs.</label>
+                            <label><input type="radio" name="title" value="PhD." required> PhD.</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="payment">付款方式 (Payment):</label>
+                        <select id="payment" name="payment" required>
+                            <option value="">請選擇付款方式</option>
+                            <option value="credit card">信用卡 (Credit Card)</option>
+                            <option value="debit card">金融卡 (Debit Card)</option>
+                            <option value="cash">現金 (Cash)</option>
+                            <option value="mobile payment">行動支付 (Mobile Payment)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" id="subscribe" name="subscribe" required>
+                                我同意訂閱電子報 (Subscribe)
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="submit" value="提交 Submit">
+                        <input type="reset" value="重置 Reset">
+                    </div>
+                </form>
+            </div>
 
-    <!--iframe embed content from another source into an HTML document
-    for example, used for ads, used in hacking techniques-->
+            <!-- 互动按钮 -->
+            <div class="section">
+                <h2>🎯 互動按鈕</h2>
+                <a href="https://www.google.com" target="_blank">
+                    <button>前往 Google</button>
+                </a>
+                <a href="#" onclick="alert('高孟麟棒棒!'); return false;">
+                    <button>點我！</button>
+                </a>
+                <button onclick="doSomething()">點我改變文字！</button>
+                <p id="demo">Yo 是我</p>
+                <script>
+                    function doSomething() {
+                        document.getElementById("demo").innerHTML = "我是你爹!";
+                    }
+                </script>
+            </div>
 
-    <iframe src="https://www.wikipedia.org" height="300" width="500" title="Iframe Example"></iframe>
-    <iframe src="index2.html" style="border: 10px solid black;
-    " height="300" width="500" title="Iframe Example"></iframe>
-    <br>
-    <!--audio-->
-    
-        <button onclick="playAudio()">播放音頻</button>
-        <button onclick="pauseAudio()">暫停音頻</button>
-        <audio controls //autoplay loop src="baby.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    <!--image-->
-    <a href="https://zh.wikipedia.org/zh-tw/%E7%8A%AC" target=_blank title="this take you to a dog picture">
-        <img src="dog.jpg" height="100" alt="this is a dog" title="they are cute dogs">
-    </a>
-    <br>
-    <!--video-->
-    <video controls //autoplay loop src="cola.mp4" height="100"></video>
-    <!--table-->
-    <table bgcolor="lightblue" border="1" width="80%" cellpadding="10" cellspacing="5">
-        <h3>Store Hours</h3>
-        <tr bgcolor="gray">
-            <th width="100">Sunday</th>
-            <th width="100">Monday</th>
-            <th width="100">Tuesday</th>
-            <th width="100">Wednesday</th>
-            <th width="100">Thursday</th>
-            <th width="100">Friday</th>
-            <th width="100">Saturday</th>
-        </tr>
-        <tr bgcolor="lightgray" align="center">
-            <td>Closed</td>
-            <td>9~15</td>
-            <td>9~15</td>
-            <td>9~15</td>
-            <td>9~15</td>
-            <td>9~15</td>
-            <td>9~15</td>
-        </tr>
-        <tr>
-            <td>Banana</td>
-            <td>$0.5</td>
-            <td>100</td>
-            <td>$50</td>
-            <td>Fresh</td>
-            <td>Yes</td>
-            <td>Yes</td>
-        </tr>
-    </table>
-    <!--list-->
-        <h4>Unordered List</h4>
-        <ul>
-            <li>take shower</li>
-            <li>take medicine</li>
-            <li>work out
+            <!-- 嵌入内容 -->
+            <div class="section">
+                <h2>🖼️ 嵌入內容 (iFrames)</h2>
+                <iframe src="https://www.wikipedia.org" height="300" width="100%" title="維基百科"></iframe>
+                <iframe src="html/index2.html" style="border: 3px solid #667eea;" height="300" width="100%" title="Index 2"></iframe>
+            </div>
+
+            <!-- 媒体内容 -->
+            <div class="section">
+                <h2>🎵 媒體內容</h2>
+                
+                <h3>音頻播放器</h3>
+                <audio controls src="assets/baby.mp3" type="audio/mpeg">
+                    您的瀏覽器不支持音頻播放。
+                </audio>
+                
+                <h3 style="margin-top: 20px;">圖片展示</h3>
+                <a href="https://zh.wikipedia.org/zh-tw/%E7%8A%AC" target="_blank" title="前往狗的維基百科頁面">
+                    <img src="assets/dog.jpg" height="200" alt="這是一隻狗" title="可愛的狗狗">
+                </a>
+                
+                <h3 style="margin-top: 20px;">視頻播放器</h3>
+                <video controls src="assets/cola.mp4" height="200"></video>
+            </div>
+
+            <!-- 表格 -->
+            <div class="section">
+                <h2>📊 營業時間表</h2>
+                <table>
+                    <tr>
+                        <th>星期日</th>
+                        <th>星期一</th>
+                        <th>星期二</th>
+                        <th>星期三</th>
+                        <th>星期四</th>
+                        <th>星期五</th>
+                        <th>星期六</th>
+                    </tr>
+                    <tr>
+                        <td>休息</td>
+                        <td>9:00 - 15:00</td>
+                        <td>9:00 - 15:00</td>
+                        <td>9:00 - 15:00</td>
+                        <td>9:00 - 15:00</td>
+                        <td>9:00 - 15:00</td>
+                        <td>9:00 - 15:00</td>
+                    </tr>
+                    <tr>
+                        <td>香蕉</td>
+                        <td>$0.5</td>
+                        <td>100個</td>
+                        <td>$50</td>
+                        <td>新鮮</td>
+                        <td>有貨</td>
+                        <td>有貨</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 列表 -->
+            <div class="section">
+                <h2>📋 列表示例</h2>
+                
+                <h3>無序列表 (Unordered List)</h3>
                 <ul>
-                    <li>push up</li>
-                    <li>sit up</li>
-                    <li>run</li>
+                    <li>洗澡 (Take Shower)</li>
+                    <li>吃藥 (Take Medicine)</li>
+                    <li>運動 (Work Out)
+                        <ul>
+                            <li>伏地挺身 (Push Up)</li>
+                            <li>仰臥起坐 (Sit Up)</li>
+                            <li>跑步 (Run)</li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-        </ul>
-        
 
-        <h4>Ordered List</h4>
-        <ol>
-            <li>basketball</li>
-            <li>baseball</li>
-            <li>examination</li>
-        </ol>
-        <ol type="A">
-            <li>game time</li>
-            <li>practice</li>
-            <li>movie</li>
-        </ol>
-        <!--up for term and down for definition-->
-        <h4>Description List</h4>
-        <dt>HTML</dt>
-        <dd>Hypertext Markup Language</dd>
-        <dt>CSS</dt>
-        <dd>Cascading Style Sheets</dd>
-        <dt>JS</dt>
-        <dd>JavaScript</dd>
-    
-    <!--text-->
-    <p>This is some normal text content.</p>
-    <p>This is some <b>bold</b> text content.</p>
-    <p>This is some <i>italic</i> text content.</p>
-    <p>This is some <big>big</big> text content.</p>
-    <p>This is some <small>small</small> text content.</p>
-    <p>This is some <sub>subscript</sub> text content.</p>
-    <p>This is some <sup>superscript</sup> text content.</p>
-    <p>This is some <ins>inserted</ins> text content.</p>
-    <p>This is some <del>deleted</del>  text content.</p>
-    <p>This is some <mark>marked</mark> text content.</p>
-    
-    <!--text-->
-    <br>
-    <h1 style="color: chocolate;">Welcome to my website</h1>
-    <br>
-    <h2 style="color: rgb(255, 165, 0);">Welcome to my website</h2>
-    <br>
-    <h3 style="color: #FF4500;">Welcome to my website</h3> 
-    <br>
-    <h4>Welcome to my website</h4>
-    <br>
-    <h5>Welcome to my website</h5>
-    <br>
-    <h6>Welcome to my website</h6>
-    <p>This is a paragraph.</p>
-    <br>
-    <!--span= adds markup text or portion of text-->
-    <div style="background-color: lightblue;color: brown;">
-        This is a division block element.
-    <!--div = defines a division block element of a document-->
-    <p style="background-color: azure;color: brown;">Lorem, ipsum dolor sit 
-        amet consectetur adipisicing elit. Provident, officia. Corrupti nemo, 
-        obcaecati aspernatur recusandae minima inventore optio maxime dignissimos
-         officia! Ea maiores perferendis itaque, corrupti repellendus maxime 
-         quaerat reiciendis?</p>
+                <h3>有序列表 (Ordered List)</h3>
+                <ol>
+                    <li>籃球 (Basketball)</li>
+                    <li>棒球 (Baseball)</li>
+                    <li>考試 (Examination)</li>
+                </ol>
+                
+                <ol type="A">
+                    <li>比賽時間 (Game Time)</li>
+                    <li>練習 (Practice)</li>
+                    <li>電影 (Movie)</li>
+                </ol>
 
-    <p ><span style="color: brown;">Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit.
-         Obcaecati ex quisquam temporibus a et pariatur fuga saepe veniam natus
-          amet hic, similique praesentium beatae cupiditate sapiente, porro 
-          cumque! Magni, veritatis.</p>
+                <h3>描述列表 (Description List)</h3>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>超文本標記語言 (Hypertext Markup Language)</dd>
+                    <dt>CSS</dt>
+                    <dd>層疊樣式表 (Cascading Style Sheets)</dd>
+                    <dt>JS</dt>
+                    <dd>JavaScript 程式語言</dd>
+                </dl>
+            </div>
 
-    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati 
-        ex quisquam temporibus a et pariatur fuga saepe veniam natus amet hic, 
-        similique praesentium beatae cupiditate sapiente, porro cumque! Magni, 
-        veritatis.</p>
+            <!-- 文本样式展示 -->
+            <div class="section">
+                <h2>✨ 文字樣式展示</h2>
+                <div class="text-examples">
+                    <p>這是普通文字 (Normal Text)</p>
+                    <p>這是 <b>粗體</b> 文字 (Bold)</p>
+                    <p>這是 <i>斜體</i> 文字 (Italic)</p>
+                    <p>這是 <big>大號</big> 文字 (Big)</p>
+                    <p>這是 <small>小號</small> 文字 (Small)</p>
+                    <p>這是 H<sub>2</sub>O 下標文字 (Subscript)</p>
+                    <p>這是 X<sup>2</sup> 上標文字 (Superscript)</p>
+                    <p>這是 <ins>插入</ins> 文字 (Inserted)</p>
+                    <p>這是 <del>刪除</del> 文字 (Deleted)</p>
+                    <p>這是 <mark>標記</mark> 文字 (Marked)</p>
+                </div>
+            </div>
+
+            <!-- 标题展示 -->
+            <div class="section">
+                <h2>📐 標題層級展示</h2>
+                <h1 style="color: chocolate;">H1 - 歡迎來到我的網站</h1>
+                <h2 style="color: rgb(255, 165, 0);">H2 - 歡迎來到我的網站</h2>
+                <h3 style="color: #FF4500;">H3 - 歡迎來到我的網站</h3> 
+                <h4>H4 - 歡迎來到我的網站</h4>
+                <h5>H5 - 歡迎來到我的網站</h5>
+                <h6>H6 - 歡迎來到我的網站</h6>
+                <p>這是一個段落文字示例。</p>
+            </div>
+
+            <!-- 示例文本 -->
+            <div class="section">
+                <h2>📝 文字區塊示例</h2>
+                <div style="background-color: #f0f0f0; padding: 20px; border-radius: 10px; color: #333;">
+                    <h3>區塊元素 (Division Block)</h3>
+                    <p style="background-color: white; padding: 15px; border-radius: 8px;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, officia. 
+                        Corrupti nemo, obcaecati aspernatur recusandae minima inventore optio maxime 
+                        dignissimos officia! Ea maiores perferendis itaque, corrupti repellendus maxime 
+                        quaerat reiciendis?
+                    </p>
+
+                    <p style="padding: 15px;">
+                        <span style="color: #667eea; font-weight: bold;">Lorem ipsum dolor sit amet</span>, 
+                        consectetur adipisicing elit. Obcaecati ex quisquam temporibus a et pariatur fuga 
+                        saepe veniam natus amet hic, similique praesentium beatae cupiditate sapiente, 
+                        porro cumque! Magni, veritatis.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
